@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(186, 221, 31);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+p{
+    color: rgb(46, 46, 56);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+strong{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
