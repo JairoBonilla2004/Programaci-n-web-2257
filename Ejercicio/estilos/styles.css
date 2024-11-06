@@ -17,3 +17,12 @@ strong{
     
 }
 
+ul li {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+dt{
+    color: red;
+    font-weight: bold;
+}
