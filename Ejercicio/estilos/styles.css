@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(186, 221, 31);
+    background-color: rgb(153, 162, 113);
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -25,4 +25,27 @@ ul li {
 dt{
     color: red;
     font-weight: bold;
+}
+
+footer p{
+    text-align: center;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.titulos-principales{
+    color: rgb(123, 28, 28);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#localizacion {
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container{
+    text-align: center;
+    color: rgb(22, 22, 60);
+    max-width: 800px;
+    margin: 0 auto;
 }
