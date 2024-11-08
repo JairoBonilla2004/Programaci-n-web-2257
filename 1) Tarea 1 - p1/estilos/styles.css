@@ -16,7 +16,9 @@ strong{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-
+img{
+    width: 500px;
+}
 ul li {
     color: blue;
     font-family: 'Courier New', Courier, monospace;
@@ -44,7 +46,7 @@ footer p{
 }
 
 .container{
-    text-align: center;
+
     color: rgb(22, 22, 60);
     max-width: 800px;
     margin: 0 auto;
