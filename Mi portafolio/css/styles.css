@@ -1,20 +1,25 @@
-img{
-    border-radius: 50%;
-}
 .titulos{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(113, 139, 73);
     text-align: center;
 }
 
-.centrar{
-    margin-left: auto;
-    margin-right:auto ;
-    width: 300px;
-
+.contenedor{
+    text-align: center;
 }
-
+.contenedor-secundario{
+    width: 700px;
+}
+.align-izq{
+    text-align: left;
+}
+.centrar{
+    text-align: center;
+    font-size: 25px;
+}
 footer{
-    background-color: pink;
+    background-color: rgb(220, 168, 177);
+    height: 25px;
 }
 footer p{
     text-align: center;
