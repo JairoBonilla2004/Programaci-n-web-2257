@@ -66,3 +66,17 @@ footer p{
     cursor:pointer;
     background-color: brown;
 }
+.flexStyle p{
+    width: 30%;
+}
+.flexStyle{
+    border: 20px green dashed;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-start;
+}
+
