@@ -80,3 +80,16 @@ footer p{
     justify-content: flex-start;
 }
 
+.tblStyle{
+    border: 2px solid;
+
+}
+caption{
+    text-align: center;
+}
+.tblStyle tr{
+    background-color: rgb(61, 102, 137);
+}
+.tblStyle th{
+    background-color: tomato;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/styles.css" />
+    <link rel="stylesheet" href="stylesbg.css">
+  </head>
+  <body>
+    <header>Tablas</header>
+    <section>
+      <p>
+        Uso de la etiqueta <em>table</em> para el manejo de envio o recibo de
+        informacion
+      </p>
+    </section>
+    <article>
+      <caption>
+        Nombre de personas
+      </caption>
+      <table 
+      class="tblStyle"
+        frame="void"
+        rules="cols"
+        class="tableStyle"
+        border="2px"
+        cellpadding="10px"
+        cellspacing="0px"
+      >
+        <thead>
+          <th colspan="2">Nombres</th>
+          <!--esto es para el encabezado-->
+          <th>Edad</th>
+        </thead>
+        <tr>
+          <td>Jairo</td>
+          <td>Bonilla</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Daniela</td>
+          <td>Flores</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Elsa</td>
+          <td>Hidalgo</td>
+          <td>48</td>
+        </tr>
+        <tfoot>
+          <tr>
+            <td colspan="2">E. Promedio:</td>
+            <td>30</td>
+          </tr>
+        </tfoot>
+      </table>
+      <br><br><br>
+      <form action="">
+        <label for="">Nombre:</label>
+        <input type="text" id="nombre" placeholder="nombres"/><br>
+        <label for="">Apellido: </label>
+        <input type="text" id="apellido" placeholder="apellidos"/><br>
+        <label for="">Password</label>
+        <input type="password" id="password" placeholder="password" /><br>
+        <label for="">Profesores: </label>
+        <select  id="roles">
+          <option value="profesores">Profesores</option>
+          <option value="estudiantes">Estudiantes</option>
+          <option value="administrativo">Administrativo</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </article>
+  </body>
+</html>

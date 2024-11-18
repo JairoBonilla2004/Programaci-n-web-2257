@@ -1,0 +1,20 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(157,91,108,0.5153711142660189) 0%, rgba(143,189,151,0.42013301902792366) 47%, rgba(180,255,0,1) 100%);
+}
+
+input[type = "text"]{
+    background-color: rgb(205, 205, 214,.8);
+    border-bottom: 2px solid;
+    outline: none;
+}
+
+input[type = "submit"]{
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+
+input[type = "text"]::placeholder{
+    color: tomato;
+}
