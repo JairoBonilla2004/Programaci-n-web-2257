@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 180px;
+    display: flex;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.contenedor-login {
+    background: #fff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.formulario-login h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.formulario-login p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #555;
+}
+
+.grupo-formulario {
+    margin-bottom: 1rem;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.grupo-formulario input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.opciones-formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.recordar input {
+    margin-right: 0.5rem;
+}
+
+.olvidar-contraseña {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.olvidar-contraseña:hover {
+    text-decoration: underline;
+}
+
+.boton-login {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background: linear-gradient(135deg, #e4570b, #8ca01a);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.cont-btn{
+    display: flex;
+    
+}
+
