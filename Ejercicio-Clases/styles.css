@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #ddd;
+
+}
+header{
+    background-color: blueviolet;
+}
+.section1{
+    height: 450px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(./img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.section2{
+    height: 400px; 
+    background-image: url(./img/degradadp.jpg);
+}
+.section3{
+    height: 500px;
+    background-image: url(./img/fondo-angular.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.section4{
+    height: 1000px;
+}

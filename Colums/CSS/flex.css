@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    background-color: beige;
+}
+
+.container{
+    display: flex;
+    border: 1px solid blue;
+    height: 500px;
+    width: 80%;
+}
+
+
+.item-1{
+    flex: 1 1 500px;
+    flex-grow: 1; /*controla como crece un elemento segun su espacio disponible*/
+    flex-shrink: 1; /*controla como se encoge un eleento cuando falta un espacio*/
+    flex-basis: 100px; /*define el tamaño inicial antes de que se adapte*/
+    background-color: rgb(119, 23, 66);
+}
+
+.item-2{
+    flex: 2 2 300px;
+    background-color: rgb(153, 112, 51);
+}
+
+.item-3{
+    flex: 1 1 100px;
+    background-color: rgb(80, 153, 51);
+}

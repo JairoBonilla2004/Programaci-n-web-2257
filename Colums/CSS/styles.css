@@ -1,0 +1,8 @@
+#noticias{
+    width: 500px;
+    padding: 10px;
+    border: 1px solid seagreen;
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: purple dotted 2px;
+}
