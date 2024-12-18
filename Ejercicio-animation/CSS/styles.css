@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222323;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.circulo {
+    background-color: #b56612;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    animation-name: movimiento-circulo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.muestra-color {
+    background-color: #b56612;
+    width: 120px;
+    height: 20px;
+
+    animation-name: movimiento-muestra;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes movimiento-muestra {
+    0% {
+        transform: translate(0px, 420px);
+    }
+    25% {
+        transform: translate(300px, 420px); /* Coincide con el círculo */
+    }
+    50% {
+        transform: translate(600px, 420px);
+    }
+    75% {
+        transform: translate(300px, 420px); /* Coincide con el círculo */
+    }
+    100% {
+        transform: translate(0px, 420px);
+    }
+}
+
+@keyframes movimiento-circulo {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(320px, 420px); /* Coincide con la muestra */
+    }
+    50% {
+        transform: translate(700px, 0px);
+    }
+    75% {
+        transform: translate(380px, 420px); /* Coincide con la muestra */
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.contenedor-principal {
+    background-color: black;
+    height: 490px;
+    width: 730px;
+    border-radius: 10px;
+    border: 15px dotted white;
+}

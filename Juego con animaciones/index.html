@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pong - Tres Rebotes</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #1a1a1a;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .paddle {
+            width: 200px;
+            height: 20px;
+            background-color: #4CAF50;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            animation: movePaddle 3s linear infinite;
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            background-color: #ff4444;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounceBall 6s linear infinite;
+        }
+
+        @keyframes movePaddle {
+            0%, 100% { left: 0; }
+            50% { left: calc(100% - 100px); }
+        }
+
+        @keyframes bounceBall {
+            0%, 100% { top: calc(100% - 40px); left: 50px; }
+            16.67% { top: 20px; left: 25%; }
+            33.33% { top: calc(100% - 40px); left: 50%; }
+            50% { top: 20px; left: 75%; }
+            66.67% { top: calc(100% - 40px); left: calc(100% - 50px); }
+            83.33% { top: 20px; left: 50%; }
+        }
+        .contenedor{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="game-container">
+            <div class="ball"></div>
+            <div class="paddle"></div>
+        </div>
+    </div>
+   
+</body>
+</html>
