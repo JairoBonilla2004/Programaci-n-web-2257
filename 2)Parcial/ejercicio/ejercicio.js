@@ -12,10 +12,16 @@ const estudiantes = [
 ];
 
 function agregarCalificaciones(estudiante, nuevasCalificaciones) {
-    for (let i = 0; i < nuevasCalificaciones.length; i++) {
-        estudiante.calificaciones.push(nuevasCalificaciones[i]);
+    const calificacionesActualizadas = [];
+    for (let i = 0; i < estudiante.calificaciones.length; i++) {
+        calificacionesActualizadas[calificacionesActualizadas.length] = estudiante.calificaciones[i];
     }
+    for (let i = 0; i < nuevasCalificaciones.length; i++) {
+        calificacionesActualizadas[calificacionesActualizadas.length] = nuevasCalificaciones[i];
+    }
+    estudiante.calificaciones = calificacionesActualizadas;
 }
+
 
 function calcularPromedio(calificaciones) {
     let suma = 0;
