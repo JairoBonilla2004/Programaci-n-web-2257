@@ -22,13 +22,13 @@ function calcularPromedio(a, b, c) {
   (function () {
     try {
       const promedio = calcularPromedio(4, 8, 6);
-      console.log(`El promedio es: ${promedio}`);
+      console.log(`El promedio es: `+promedio);
   
       const mayor = determinarMayor(10, 20);
-      console.log(`El mayor es: ${mayor}`);
+      console.log(`El mayor es: `+mayor);
   
       const numeroPar = esPar(10);
-      console.log(`Número par: ${numeroPar}`);
+      console.log(`Número par: `+numeroPar);
     } catch (error) {
       console.error(error.message);
     }
