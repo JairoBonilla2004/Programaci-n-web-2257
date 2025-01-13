@@ -26,7 +26,6 @@ class Inventario {
     }
 
     aplicarDescuento(categoria, porcentaje) {
-        console.log(this.productoList);
         for(let producto of this.productoList){
             if (producto.categoria === categoria) {
                 producto.precio -= producto.precio * (porcentaje / 100);
@@ -120,13 +119,14 @@ let venta = new Venta(inv);
 //Método que me sirve para filtrar productos por categoría
 const productos_categoria = inv.filtrarProductosCategoria("Fruta");
 console.log(productos_categoria);
-inv.aplicarDescuento("Fruta", 10);
-inv.aplicarDescuento("Verduras",5);
+
+
+
 //Realizamos una venta con un producto que no existe y la cantidad no es la suficiente
 venta.realizarVenta("Electrodomesticos",4);
 venta.realizarVenta("Manzana",800);
 
-//--------------
+//Realizamos las ventas con datos válidos
 
 venta.realizarVenta( "Manzana", 5);
 venta.realizarVenta("Pera", 3);
