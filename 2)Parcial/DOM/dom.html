@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo del DOM en JavaScript</title>
+    <style>
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="Titulo">Manejo del DOM en JavaScript</h1>
+    <button type="button" onclick="mostrarImagenes()">Mostrar</button>
+    <br />
+    <img id="imagen" src="./img/arquero.webp" alt="imagen" />
+    <script>
+      let imagenes = [
+        {
+            src:"./img/arquero.webp",
+            alt: "arquero"
+        },
+        {
+            src:"./img/ball-2.webp",
+            alt: "balon"
+        },
+        {
+            src:"./img/city-profesional.webp",
+            alt: "estadio profesional"
+        },
+        {
+            src:"./img/estadio.webp",
+            alt: "estadio"
+        },
+        {
+            src:"./img/imgF.webp",
+            alt: "imagen de flor"
+        },
+        
+      ];
+
+      function mostrarImagenes() {
+        document.getElementById("Titulo").innerHTML = "Nuevo título";
+        document.getElementById("Titulo").style.color = "blue";
+        let indice = 0;
+        function cambiarImagen() {
+          document.getElementById("imagen").src = imagenes[indice].src;
+          document.getElementById("imagen").alt = imagenes[indice].alt;
+          indice = (indice + 1) % imagenes.length;
+        }
+
+        setInterval(cambiarImagen, 3000); 
+      }
+    </script>
+  </body>
+</html>

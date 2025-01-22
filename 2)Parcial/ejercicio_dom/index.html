@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Configuración</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5rem;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #007bff;
+        cursor: pointer;
+      }
+      #panel {
+        max-width: 500px;
+        margin: 20px auto;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      ul li {
+        background: #f8f9fa;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .comentarios {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="titulo">Título Principal</h1>
+    <button id="btn-panel">Mostrar Panel</button>
+
+    <div id="panel" style="display: none;">
+      <form id="form">
+        <label>
+          Cambiar Título:
+          <input type="text" id="cambiar-titulo" placeholder="Nuevo título" />
+        </label>
+        <label>
+          Cambiar Fondo:
+          <input type="color" id="fondo" />
+        </label>
+        <label>
+          Habilitar Comentarios:
+          <input type="checkbox" id="chk-comentarios" />
+        </label>
+        <div class="comentarios">
+          <textarea
+            id="area-comentarios"
+            rows="5"
+            cols="30"
+            placeholder="Porfavor, escribe un comentario..."
+            disabled
+          ></textarea>
+        </div>
+      </form>
+      <ul id="lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+    </div>
+
+    <script>
+      const btnPanel = document.getElementById("btn-panel");
+      const panel = document.getElementById("panel");
+      const cambiarTitulo = document.getElementById("cambiar-titulo");
+      const titulo = document.getElementById("titulo");
+      const fondo = document.getElementById("fondo");
+      const chkComentarios = document.getElementById("chk-comentarios");
+      const areaComentarios = document.getElementById("area-comentarios");
+      const lista = document.getElementById("lista");
+
+      btnPanel.addEventListener("click", () => {
+        if (panel.style.display === "none" || panel.style.display === "") {
+          panel.style.display = "block";
+          btnPanel.textContent = "Ocultar Panel";
+        } else {
+          panel.style.display = "none";
+          btnPanel.textContent = "Mostrar Panel";
+        }
+      });
+
+      cambiarTitulo.addEventListener("input", (event) => {
+        if (event.target.value) {
+          titulo.textContent = event.target.value;
+        } else {
+          titulo.textContent = "Título Principal";
+        }
+      });
+
+      fondo.addEventListener("input", (event) => {
+        document.body.style.backgroundColor = event.target.value;
+      });
+
+      chkComentarios.addEventListener("change", (event) => {
+        areaComentarios.disabled = !event.target.checked;
+      });
+
+      lista.addEventListener("click", (event) => {
+        if (event.target.tagName === "LI") {
+          event.target.remove();
+        }
+      });
+    </script>
+  </body>
+</html>
+
